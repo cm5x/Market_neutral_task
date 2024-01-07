@@ -4,6 +4,8 @@ import pandas as pd
 import requests
 
 # Function to fetch historical OHLCV data
+
+#This is for scalability of program. fetch_historical_data_corr function is used on general system.
 def fetch_historical_data(symbol, timeframe, limit=1000):
     binance = ccxt.binance()
 
