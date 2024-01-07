@@ -1,4 +1,4 @@
-# Market_neutral_task
+# Task : Market Neutral Strategy for Cryptomarket 
 
 Strategy is based on taking advantage of negative correlation between crypto pairs, taking position with regard to market neutral strategy principles. RSI is used at the stage of position taking decision. 
 
