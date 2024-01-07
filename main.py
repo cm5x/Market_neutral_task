@@ -4,46 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 # import openpyxl
 
-# #***************************************
 
 
-# # Define the symbol and timeframe
-# symbol1 = 'UNIUSDT'
-# symbol2 = 'ALGOUSDT'
-# timeframe = '4h'
-# limit = 100 # Adjust the limit based on your historical data requirements
-
-# # Fetch historical data
-# historical_data = data.fetch_historical_data_corr(symbol1, symbol2, timeframe, limit) 
-
-# # pd.set_option('display.max_rows', None)
-# # pd.set_option('display.max_columns', None)
-
-# # # Fetch historical data with RSI
-# # historical_data = data.fetch_historical_data(symbol, timeframe, limit)
-
-# # Backtest the strategy
-# backtested_data, trade_data = backtest.backtest_strategy(historical_data)
-
-# # Print the backtested data
-# print(backtested_data)
-# print(trade_data)
-
-# # Export the DataFrames to Excel files
-# excel_file_path_backtest = 'backtested_data_with_changes.xlsx'
-# excel_file_path_trade_data = 'trade_data.xlsx'
-
-# backtested_data.to_excel(excel_file_path_backtest)
-# trade_data.to_excel(excel_file_path_trade_data)
-
-# print(f"Backtested data with changes has been saved to {excel_file_path_backtest}")
-# print(f"Trade data has been saved to {excel_file_path_trade_data}")
-
-
-# #***************************************
-
-# symbol1 = 'ADA/USDT'
-# symbol2 = 'UNI/USDT'
 timeframe = '4h'
 limit = 1000 # Adjust the limit based on your historical data requirements
 div_count = 10 # Adjust count of diversification in portfolio
@@ -110,3 +72,44 @@ with pd.ExcelWriter('final_result_data_file.xlsx', engine='xlsxwriter') as write
 portfolioGeneration.hedgeStrategyMain(trade_changes_data)
 print('Also, total trade count was', totalTradeCount*2)
 
+
+
+#FOR TESTING
+# #***************************************
+
+# symbol1 = 'ADA/USDT'
+# symbol2 = 'UNI/USDT'
+# # Define the symbol and timeframe
+# symbol1 = 'UNIUSDT'
+# symbol2 = 'ALGOUSDT'
+# timeframe = '4h'
+# limit = 100 # Adjust the limit based on your historical data requirements
+
+# # Fetch historical data
+# historical_data = data.fetch_historical_data_corr(symbol1, symbol2, timeframe, limit) 
+
+# # pd.set_option('display.max_rows', None)
+# # pd.set_option('display.max_columns', None)
+
+# # # Fetch historical data with RSI
+# # historical_data = data.fetch_historical_data(symbol, timeframe, limit)
+
+# # Backtest the strategy
+# backtested_data, trade_data = backtest.backtest_strategy(historical_data)
+
+# # Print the backtested data
+# print(backtested_data)
+# print(trade_data)
+
+# # Export the DataFrames to Excel files
+# excel_file_path_backtest = 'backtested_data_with_changes.xlsx'
+# excel_file_path_trade_data = 'trade_data.xlsx'
+
+# backtested_data.to_excel(excel_file_path_backtest)
+# trade_data.to_excel(excel_file_path_trade_data)
+
+# print(f"Backtested data with changes has been saved to {excel_file_path_backtest}")
+# print(f"Trade data has been saved to {excel_file_path_trade_data}")
+
+
+# #***************************************
