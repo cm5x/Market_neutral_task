@@ -2,7 +2,7 @@
 
 Strategy is based on taking advantage of negative correlation between crypto pairs, taking position with regard to market neutral strategy principles. RSI is used at the stage of position taking decision. 
 
-##PARTS
+## PARTS
 
 1. Create combination of all futures pairs in Binance market. Compare them and achieve the most negative correlated pairs.
 2. Fetch OHLCV data of chosen pairs and process the data in Dataframe structure. All datas are stored and processed in dataframe structure.
