@@ -8,16 +8,16 @@ def backtest_strategy(df):
     df['pair1_position'] = 0  # 0 indicates no position, 1 indicates long (buy), -1 indicates short (sell)
     df['pair2_position'] = 0
     df['position_index'] = 0  # Position index
-    df['pair1_entry_price'] = 0.0  # Entry price for each position
-    df['pair1_exit_price'] = 0.0  # Exit price for each position
-    df['pair1_trade_change'] = 0.0  # Change in price for each trade
-    df['pair2_entry_price'] = 0.0  # Entry price for each position
-    df['pair2_exit_price'] = 0.0  # Exit price for each position
-    df['pair2_trade_change'] = 0.0  # Change in price for each trade
+    df['pair1_entry_price'] = 0.0 
+    df['pair1_exit_price'] = 0.0  
+    df['pair1_trade_change'] = 0.0 
+    df['pair2_entry_price'] = 0.0  
+    df['pair2_exit_price'] = 0.0  
+    df['pair2_trade_change'] = 0.0  
     pair1_current_position = 0
     pair2_current_position = 0
     last_open = 0
-    # Create a DataFrame to store trade-related data
+    # DataFrame to store trade-related data
     trade_data = pd.DataFrame(columns=['position_index', 'entry_time', 'exit_time', 'pair1_entry_price', 'pair1_exit_price', 'pair1_trade_change', 'pair2_entry_price', 'pair2_exit_price', 'pair2_trade_change' ])
 
     trade_data['position_index'] = 0
@@ -26,9 +26,9 @@ def backtest_strategy(df):
     trade_data['pair1_entry_price'] = 0.0
     trade_data['pair1_exit_price'] = 0.0
     trade_data['pair1_trade_change'] = 0.0
-    trade_data['pair2_entry_price'] = 0.0  # Entry price for each position
-    trade_data['pair2_exit_price'] = 0.0  # Exit price for each position
-    trade_data['pair2_trade_change'] = 0.0  # Change in price for each trade
+    trade_data['pair2_entry_price'] = 0.0 
+    trade_data['pair2_exit_price'] = 0.0  
+    trade_data['pair2_trade_change'] = 0.0 
  
 
     for i in range(1, len(df)):
