@@ -1,4 +1,6 @@
-# Task : Market Neutral Strategy for Cryptomarket 
+# Task : Market Neutral Strategy for Cryptomarket & Backtesting
+
+This repository includes code of practically manual backtesting algorithm based on time-series based price data. Also includes extra functions enables to get correlation values of pairs to enhance market neutral strategy.
 
 Strategy is based on taking advantage of negative correlation between crypto pairs, taking position with regard to market neutral strategy principles. RSI is used at the stage of position taking decision, to examplify as simple and general. 
 
